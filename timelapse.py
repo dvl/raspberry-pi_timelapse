@@ -27,7 +27,7 @@ with picamera.PiCamera() as camera:
             except OSError:
                 pass
 
-            time.sleep(60 * 5)
+            time.sleep(60 * 10)
         else:
             annotate_text = datetime.datetime.now().strftime('%H:%M:%S @ %d/%m/%Y')
 
