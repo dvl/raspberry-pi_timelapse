@@ -34,7 +34,7 @@ with picamera.PiCamera() as camera:
             draw = ImageDraw.Draw(image)
             font = ImageFont.truetype('/usr/share/fonts/truetype/roboto/Roboto-Regular.ttf', 24)
 
-            draw.text((10, 700), annotate_text, (255, 255, 0), font=font)
+            draw.text((10, 730), annotate_text, (255, 255, 0), font=font)
 
             image.save(filename)
 
