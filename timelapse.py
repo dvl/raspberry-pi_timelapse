@@ -40,6 +40,6 @@ with picamera.PiCamera() as camera:
 
             print('[!] Taken: {}'.format(filename))
 
-            time.sleep(60 / 2)
+            time.sleep(60 * 2)
 
         image.close()
