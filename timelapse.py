@@ -20,13 +20,13 @@ with picamera.PiCamera() as camera:
         r, g, b, _ = stat.mean
 
         if r < 50 and g < 50 and b < 50:
-            print('[!] Lights must be powered off, sleeping...')       
-            
+            print('[!] Lights must be powered off, sleeping...')
+
             try:
                 os.unlink(filename)
-            except:
+            except OSError:
                 pass
-            
+
             time.sleep(60 * 5)
         else:
             annotate_text = datetime.datetime.now().strftime('%H:%M:%S @ %d/%m/%Y')
